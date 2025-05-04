@@ -39,7 +39,7 @@ class TypingSpeedCalculator:
                 print("\nYou have successfully exited\n")
                 break
 
-            with open([r"Easy.txt",r"Medium.txt",r"Hard.txt",r"Hard.txt"][self.user_choice-1]) as file:
+            with open([r"data/easy.txt",r"data/medium.txt",r"data/hard.txt",r"data/hard.txt"][self.user_choice-1]) as file:
                 self.file_content  = file.read() 
 
             while(1):

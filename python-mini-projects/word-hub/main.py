@@ -19,10 +19,10 @@ class WordHub:
         self.hint = 2
 
     def get_words_and_hints(self):
-        with open(r"Word.txt","r") as file:
+        with open(r"data/word_list.txt","r") as file:
             self.word_list = file.read().split("\n")
 
-        with open(r"Meaning.txt","r") as file:
+        with open(r"data/word_hints.txt","r") as file:
             self.hint_list = file.read().split("\n")
 
         self.word_dict = dict(zip(self.word_list,self.hint_list))
